@@ -1,7 +1,7 @@
 package org.aadi.basicKeycloakDemo.controller;
 
 import org.aadi.basicKeycloakDemo.model.Employee;
-import org.aadi.basicKeycloakDemo.org.aadi.basicKeycloakDemo.service.EmployeeService;
+import org.aadi.basicKeycloakDemo.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

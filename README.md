@@ -1,13 +1,21 @@
-# basicKeycloakDemo - A demo App for Securing my SpringBoot REST APIs with Keycloak (inmemory H2 DB is used for storing demo data).
+# basicKeycloakDemo
+A demo App for Securing my SpringBoot REST APIs with Keycloak (inmemory H2 DB is used for storing demo data).
 
-- First, download your suitable Keycloak server zip file from : https://www.keycloak.org/downloads
+# What is Keycloak used for?
+Keycloak is an open source Identity and Access Management solution aimed at modern applications and services. It makes easy Authentication & Authorization 
+for apps with little to no code. Keycloak is developed in Java, and as of now this is WildFly community project, under Red Hat. Consider Keycloak, if you 
+need SSO (Single Sign On) feature, i.e. Once logged-in to Keycloak, users don't have to login again to access a different application. Keycloak offers 
+features such as SSO, Identity Brokering and Social Login, User Federation, Client Adapters, an Admin Console, and an Account Management Console, etc. 
+
+# How to use?
+First, download your suitable Keycloak server zip file from : https://www.keycloak.org/downloads
 and Run your keycloak server at bin folder after unzipping it with CMD#> standalone.bat -Djboss.http.port=8180
 
 OR
 
 spin it with Docker => docker run -p 8180:8180 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin jboss/keycloak -Dkeycloak.profile.feature.docker=enabled -b 0.0.0.0
 
-# Make sure keycloak server is running with given user settings before you run your code.
+# Make sure keycloak server is running with given user settings before you run your Java code.
  
 - Create a 'realm' inside Keycloak :- testing
 
@@ -42,6 +50,7 @@ spin it with Docker => docker run -p 8180:8180 -e KEYCLOAK_USER=admin -e KEYCLOA
 - manager user can access both those urls, as manager has given both user & admin roles.
 
 # Test them in Postman with such settings :
+Click on "Get New Access Token" first, and later use that generated token for sending request during testing with POSTMAN.
 ![](https://github.com/AadityaUoHyd/basicKeycloakDemo/blob/master/postman1.JPG)
 ![](https://github.com/AadityaUoHyd/basicKeycloakDemo/blob/master/postman2.JPG)
 

@@ -1,4 +1,4 @@
-package org.aadi.basicKeycloakDemo.org.aadi.basicKeycloakDemo.service;
+package org.aadi.basicKeycloakDemo.service;
 
 import org.aadi.basicKeycloakDemo.model.Employee;
 import org.aadi.basicKeycloakDemo.repository.EmployeeRepository;
