@@ -50,9 +50,10 @@ spin it with Docker => docker run -p 8180:8180 -e KEYCLOAK_USER=admin -e KEYCLOA
 - manager user can access both those urls, as manager has given both user & admin roles.
 
 # Test them in Postman with such settings :
-Click on "Get New Access Token" first, and later use that generated token for sending request during testing with POSTMAN.
+Click on "Get New Access Token" first, and later use that generated "use token" for sending request during testing with POSTMAN.
 ![](https://github.com/AadityaUoHyd/basicKeycloakDemo/blob/master/postman1.JPG)
 ![](https://github.com/AadityaUoHyd/basicKeycloakDemo/blob/master/postman2.JPG)
+![](https://github.com/AadityaUoHyd/basicKeycloakDemo/blob/master/use%20token.JPG)
 
 
 # Source to learn & explore : 
