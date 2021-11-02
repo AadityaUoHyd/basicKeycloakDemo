@@ -27,17 +27,19 @@ spin it with Docker => docker run -p 8180:8180 -e KEYCLOAK_USER=admin -e KEYCLOA
 ![](https://github.com/AadityaUoHyd/basicKeycloakDemo/blob/master/aadiuser.JPG)
 
 #create an user with both user & admin role:- manager/manager123
-![](https://github.com/AadityaUoHyd/basicKeycloakDemo/blob/master/myadmin.JPG)
-
-#create an user with only admin role:- myadmin/myadmin123
 ![](https://github.com/AadityaUoHyd/basicKeycloakDemo/blob/master/manager.JPG)
 
-# Results :
-- You'll find, aadiuser can able to consume url, which has specific employee details: http://localhost:9091/emp/1
-- myadmin user can able to consume url, which has all employees : http://localhost:9091/emp/
-- manager user can access both those url, as manager has both user & admin roles.
+#create an user with only admin role:- myadmin/myadmin123
+![](https://github.com/AadityaUoHyd/basicKeycloakDemo/blob/master/myadmin.JPG)
 
-# Find your token-endpoints properties from : http://localhost:8180/auth/realms/testing/.well-known/openid-configuration
+# Find your token-endpoints properties & pom.xml from : 
+- http://localhost:8180/auth/realms/testing/.well-known/openid-configuration
+- https://www.keycloak.org/docs/latest/securing_apps/#_spring_boot_adapter
+
+# Results :
+- You'll find, aadiuser can able to consume only individual urls & not all employees details at once. say specific employee details: http://localhost:9091/emp/1
+- myadmin user can able to consume only that url, which has all employees : http://localhost:9091/emp/
+- manager user can access both those urls, as manager has given both user & admin roles.
 
 # Test them in Postman with such settings :
 ![](https://github.com/AadityaUoHyd/basicKeycloakDemo/blob/master/postman1.JPG)
