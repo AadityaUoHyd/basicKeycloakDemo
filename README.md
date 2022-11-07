@@ -1,5 +1,8 @@
-# basicKeycloakDemo
-A demo App for Securing my SpringBoot REST APIs with Keycloak (inmemory H2 DB is used for storing demo data).
+# basicKeycloakDemo with Password-Grant-Flow
+A demo App for Securing my SpringBoot REST APIs with Keycloak (inmemory H2 DB is used for storing API data).
+Username, password, role, etc authorization related data will be saved in keycloak server. 
+Here, we are trying for PASSWORD GRANT FLOW, where username and password of the user are used to be authorize.
+This is not recommended to use by OAuth in production, it can only be used if you've absolute trust on the client.
 
 # What is Keycloak used for?
 Keycloak is an open source Identity and Access Management solution aimed at modern applications and services. It makes easy Authentication & Authorization 
